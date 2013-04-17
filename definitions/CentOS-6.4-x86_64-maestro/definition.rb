@@ -25,6 +25,7 @@ Veewee::Session.declare({
   :sudo_cmd => "echo '%p'|sudo -S sh '%f'",
   :shutdown_cmd => "/sbin/halt -h -p",
   :postinstall_files => [
+    "proxy.sh",
     "base.sh",
     "chef.sh",
     "puppet.sh",
