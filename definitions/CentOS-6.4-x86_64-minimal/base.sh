@@ -1,5 +1,9 @@
 # Base install
 
+if [ ! -z "$http_proxy" ]; then
+  echo "http_caching=packages" >>/etc/yum.conf
+fi
+
 sed -i "s/^.*requiretty/#Defaults requiretty/" /etc/sudoers
 
 cat > /etc/yum.repos.d/epel.repo << EOM
