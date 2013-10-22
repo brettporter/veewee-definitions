@@ -23,6 +23,10 @@ To build a box
     veewee vbox export $BOX_NAME
     vagrant box add $BOX_NAME $BOX_NAME.box
 
+## Using a proxy
+
+    VEEWEE_http_proxy=http://proxy:3128/ VEEWEE_https_proxy=http://proxy:3128/
+
 # Deploying to repository
 
 Example

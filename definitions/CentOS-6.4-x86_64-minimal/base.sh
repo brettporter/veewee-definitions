@@ -1,5 +1,10 @@
 # Base install
 
+if [ -f .veewee_params ]
+then
+  . .veewee_params
+fi
+
 if [ ! -z "$http_proxy" ]; then
   echo "http_caching=packages" >>/etc/yum.conf
 fi
