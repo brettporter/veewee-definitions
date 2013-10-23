@@ -4,7 +4,7 @@ Veewee::Session.declare({
   :disk_size => '10140',
   :disk_format => 'VDI',
   :hostiocache => 'off',
-  :os_type_id => 'RedHat_64',
+  :os_type_id => 'RedHat6_64',
   :iso_file => "CentOS-6.4-x86_64-minimal.iso",
   :iso_src => "http://mirror.internode.on.net/pub/centos/6.4/isos/x86_64/CentOS-6.4-x86_64-minimal.iso",
   :iso_md5 => "4a5fa01c81cc300f4729136e28ebe600",
@@ -30,7 +30,7 @@ Veewee::Session.declare({
     "puppet.sh",
     "vagrant.sh",
     "virtualbox.sh",
-    "update.sh",
+    #"vmfusion.sh",
     "cleanup.sh",
     "zerodisk.sh"
   ],
