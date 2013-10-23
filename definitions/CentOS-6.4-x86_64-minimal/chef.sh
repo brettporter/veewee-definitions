@@ -1,8 +1,8 @@
 # Install Chef
 
-if [ -f .veewee_params ]
+if [ -f /home/veewee/.veewee_params ]
 then
-  . .veewee_params
+  . /home/veewee/.veewee_params
 fi
 
 curl -L https://www.opscode.com/chef/install.sh | bash

@@ -1,8 +1,3 @@
-if [ -f .veewee_params ]
-then
-  . .veewee_params
-fi
-
 cd /tmp
 mkdir -p /mnt/cdrom
 mount -o loop /home/veewee/linux.iso /mnt/cdrom

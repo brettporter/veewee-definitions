@@ -1,8 +1,8 @@
 # Base install
 
-if [ -f .veewee_params ]
+if [ -f /home/veewee/.veewee_params ]
 then
-  . .veewee_params
+  . /home/veewee/.veewee_params
 fi
 
 if [ ! -z "$http_proxy" ]; then

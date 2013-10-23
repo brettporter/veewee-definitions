@@ -1,9 +1,9 @@
 # Vagrant specific
 date > /etc/vagrant_box_build_time
 
-if [ -f .veewee_params ]
+if [ -f /home/veewee/.veewee_params ]
 then
-  . .veewee_params
+  . /home/veewee/.veewee_params
 fi
 
 # Add vagrant user
