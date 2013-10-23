@@ -1,6 +1,11 @@
 # Vagrant specific
 date > /etc/vagrant_box_build_time
 
+if [ -f /home/veewee/.veewee_params ]
+then
+  . /home/veewee/.veewee_params
+fi
+
 # Add vagrant user
 /usr/sbin/groupadd vagrant
 /usr/sbin/useradd vagrant -g vagrant -G wheel
